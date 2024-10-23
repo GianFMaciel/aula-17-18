@@ -1,17 +1,17 @@
 let quantidadeBichos = Number(prompt("Quantos bichinhos de estimação você tem ?"))
+let nomeBichos = []
 
 if (quantidadeBichos === 0) {
     console.log("Que pena! Você pode adotar um pet!")
-} else if (quantidadeBichos >= 1) {
-    let nomeBichos = []
-     for (nomeBichos = 0; nomeBichos < quantidadeBichos; nomeBichos++) {
-       let nome = prompt("Digite o nome do seu bichinho:")
-       nomeBichos.push(nome)
-    
-       console.log("Os seus bichinhos de estimação são" `${nomeBichos}`) 
-     }
+} else if (quantidadeBichos > 0) {
+    for (let i = 0; i < quantidadeBichos; i++) {
+      let nome = prompt("Digite o nome do seu bichinho:")
+      nomeBichos.push(nome)
+    } 
     
 }
+
+console.log(nomeBichos)
 
 
 

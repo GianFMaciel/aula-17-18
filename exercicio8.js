@@ -1,11 +1,28 @@
 let original = [10, 5, 60, 34, 55, 81, 9, 70, 22, 48]
 
 let imprimirArray = (imprime) => {
-    
+   for (let i = 0; i < original; i++) {
+     imprime = original[i]
 
+   }
+   return imprime
 }
 
+let resultado = imprimirArray(original)
+console.log(resultado)
 
+
+
+let dividirArray = (divisor) => {
+   for (let i = 0; i < original; i++) {
+     divisor = original[i / 10]
+     
+   }
+   return divisor
+}
+
+let resultadoDividido = dividirArray(original)
+console.log(resultadoDividido)
 
 
 
